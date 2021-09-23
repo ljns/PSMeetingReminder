@@ -42,7 +42,7 @@ while ($true)
     $ackResult = $null
 
     # if there are items in the calendar
-    if ($calendarItems.ToString().Count -gt 0)
+    if ($calendarItems -ne $null)
     {
         # iterate through the discovered items to see if any come up soon
         foreach ($item in $calendarItems)
