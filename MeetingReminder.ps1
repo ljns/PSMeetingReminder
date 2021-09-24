@@ -50,7 +50,7 @@ while ($true)
             $span = New-TimeSpan -Start $dateTime -End $item.Start
     
             # if one does come up within the specified time period
-            if ($span.Minutes -le $minutesWithin -and $span -gt 0)
+            if ($span.TotalMinutes -le $minutesWithin -and $span -gt 0)
             {
                 # check if this is a repeat alert
                 if ($alreadyAlerted)
